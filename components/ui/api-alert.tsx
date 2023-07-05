@@ -1,3 +1,5 @@
+"use client";
+
 import { STRING_LITERAL_DROP_BUNDLE } from "next/dist/shared/lib/constants";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Copy, Server } from "lucide-react";
@@ -50,5 +52,3 @@ export const ApiAlert: React.FC<ApiAlertProps> = ({
     </Alert>
   );
 };
-
-//3:30:33
