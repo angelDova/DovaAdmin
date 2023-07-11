@@ -37,7 +37,7 @@ export async function POST(
     });
 
     if (!storeByUserId) {
-      return new NextResponse("Unauthorized", { status: 403 });
+      return new NextResponse("Unauthorized", { status: 405 });
     }
 
     const category = await prismadb.category.create({
